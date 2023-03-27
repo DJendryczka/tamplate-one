@@ -7,12 +7,24 @@ img{
     display: block;
 }
 body{
-    background-color: rgb(48, 149, 113);
+    
+    
+    font-family: 'Poppins', sans-serif;
+}
+.bg-ios{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('../images/abstract-turquoise-smooth-wave-lines.jpg');
+    background-color: rgb(48, 149, 113);
     background-blend-mode: multiply;
     background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Poppins', sans-serif;
+    background-position: center;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    z-index: -1;
 }
 
 h1{
