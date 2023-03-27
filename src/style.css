@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+}
+body{
+    background-color: rgb(48, 149, 113);
+    background-image: url('../images/abstract-turquoise-smooth-wave-lines.jpg');
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 5rem;
+    color: rgb(29, 27, 27);
+    font: bold;
+    text-shadow: 1px 1px 2px rgb(120, 19, 19);
+    text-decoration: underline;
+    font-weight: 500;
+}
+h2{
+    font-size: 1.5rem;
+    color: rgb(24, 22, 22);
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+p{
+    font-size: 1rem;
+    text-align: right;
+    font-weight: 200;
+    
+    
+}
+.splash{
+   width: 100vw;
+   height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+}
+
+.image-wrapper, .content-wrapper{
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding: 2rem;
+    height: 100vh;
+    flex-basis: 50%;
+}
+.content-wrapper{
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+.image-wrapper{
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    background-color: aliceblue;
+}
+.content{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 3rem;
+}
+.image-wrapper p{
+    padding-bottom: 4rem;
+    text-align: left;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.image-container{
+    width: 100%;
+}
+.image-container img{
+    width: 100%;
+    height: auto;
+    padding: 0 2rem;
+}
+.splash-image{
+    background-image: url('../images/splach.jpg');
+    background-color: rgba(0, 0, 0, 0.494);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    padding: 400px 0;
+}
+@media screen and (max-width: 1150px){
+    .splash{
+        flex-direction: column;
+        height: auto;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    .content-wrapper{
+        flex-basis: 35%;
+        min-height: 190px;
+        justify-content: center;
+    }
+    .content{
+        margin-right: 0;
+    }
+    .image-wrapper{
+        flex-basis: 65%;
+        
+    }
+    .image-container img{
+        padding: 1rem 0;
+    }
+    .content-wrapper, .image-wrapper{
+        width: 100vw;
+    }
+    .image-wrapper p{
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}
