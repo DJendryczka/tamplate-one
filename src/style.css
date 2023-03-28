@@ -7,9 +7,7 @@ img{
     display: block;
 }
 body{
-    
-    
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Prompt', sans-serif;
 }
 .bg-ios{
     position: fixed;
@@ -30,10 +28,7 @@ body{
 h1{
     font-size: 5rem;
     color: rgb(29, 27, 27);
-    font: bold;
-    text-shadow: 1px 1px 2px rgb(120, 19, 19);
-    text-decoration: underline;
-    font-weight: 500;
+    font-weight: 800;
 }
 h2{
     font-size: 1.5rem;
@@ -61,13 +56,29 @@ p{
     display: flex;
     align-items: center;
     height: auto;
-    padding: 2rem;
     height: 100vh;
     flex-basis: 50%;
 }
 .content-wrapper{
     flex-grow: 1;
     justify-content: flex-end;
+    position: relative;
+}
+.line {
+    position: absolute;
+    width: 50px;
+    border: 1px solid black;
+    border-left: none;
+    border-bottom: none;
+    right: 40px;
+}
+.splash-lower{
+    height: 53%;
+    bottom: 0;
+}
+.about-upper{
+    height: 100%;
+    border-top: none;
 }
 .image-wrapper{
     flex-direction: column;
@@ -80,21 +91,22 @@ p{
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    margin-right: 3rem;
+    margin-right: 6rem;
 }
 .image-wrapper p{
-    padding-bottom: 4rem;
+    padding: 4rem;
     text-align: left;
-    padding-left: 2rem;
-    padding-right: 2rem;
 }
 .image-container{
     width: 100%;
+    padding: 0 4rem;
+    
 }
 .image-container img{
     width: 100%;
     height: auto;
-    padding: 0 2rem;
+    
+    box-shadow: 6px 6px 16px  rgb(25, 24, 24);
 }
 .splash-image{
     background-image: url('../images/splach.jpg');
@@ -124,14 +136,13 @@ p{
         flex-basis: 65%;
         
     }
-    .image-container img{
-        padding: 1rem 0;
-    }
     .content-wrapper, .image-wrapper{
         width: 100vw;
     }
     .image-wrapper p{
-        padding-left: 0rem;
-        padding-right: 0rem;
+        padding: 1.5rem;
+    }
+    .image-container{
+        padding: 1.5rem;
     }
 }
