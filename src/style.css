@@ -32,9 +32,9 @@ h1{
     font-size: 5rem;
     color: orange;
     font-weight: 200;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black;
     border-left: 1px solid black;
-    padding-left: 1.5rem;
+    padding-left: 1.5rem; */
 }
 h2{
     font-size: 1.5rem;
@@ -55,7 +55,7 @@ p{
 a{
     color: black;
 }
-.content span, .image-wrapper span{
+.splash span{
     font-size: 3rem;
 }
 .image-wrapper span{
@@ -98,6 +98,11 @@ a{
     height: 100%;
     border-top: none;
 }
+.splash-arrow{
+    position: absolute;
+    bottom: 200px;
+    right: 50px;
+}
 .image-wrapper{
     flex-direction: column;
     justify-content: center;
@@ -109,7 +114,7 @@ a{
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    margin-right: 6rem;
+    margin-right: 5.5rem;
 }
 .image-wrapper p{
     padding: 4rem;
@@ -143,13 +148,13 @@ a{
 .service-image{
     flex-basis: 34%;
 }
-.contact{
+/* .contact{
     border: 1px solid black;
     border-top: none;
     border-left: none;
     padding-right: 1rem;
     padding-bottom: 1rem;
-}
+} */
 .footer{
     flex-direction: column;
     justify-content: center;
