@@ -190,9 +190,9 @@ a{
     }
     .services-image-container{
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         flex-direction: column;
-        gap: 4rem;
+        gap: 2rem;
         align-items: center;
         justify-content: center;
     }
