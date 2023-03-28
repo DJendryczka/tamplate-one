@@ -136,12 +136,12 @@ a{
 .services-image-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 4rem;
+    gap: 2rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .service-image{
-    flex-basis: 35%;
+    flex-basis: 34%;
 }
 .contact{
     border: 1px solid black;
@@ -150,6 +150,12 @@ a{
     padding-right: 1rem;
     padding-bottom: 1rem;
 }
+.footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
 @media screen and (max-width: 1150px){
     .splash{
         flex-direction: column;
@@ -207,7 +213,7 @@ a{
     margin-top: 5px;
     padding: 10px 20px;
     box-shadow: 0px 0px 9px #ccc5c5;
-    background-color: #fffefe;
+    background-color: rgba(127, 255, 212, 0.595);
     color: #030121;
   }
   
@@ -215,7 +221,7 @@ a{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 1rem 0;
+    
   }
   
   input,
@@ -225,6 +231,9 @@ a{
     padding: 10px 18px;
     border: none;
     box-shadow: 0px 0px 9px #ccc5c5;
+  }
+  .copy{
+    text-align: center;
   }
   
   @media screen and (max-width: 769px) {
